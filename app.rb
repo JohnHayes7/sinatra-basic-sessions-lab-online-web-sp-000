@@ -7,10 +7,12 @@ class App < Sinatra::Base
     set :session_secret, "Miera"
   end
   
+  
   get '/' do
     
   erb :index
   end
+  
   
   post '/checkout' do
     
